@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<title>MY-PORFOLIO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="css/fontawesome.css">
+<link rel="stylesheet" href="Font-Awesome-master/css2/all.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.ico">
+<body>
+  <!-- Header start -->
+  <div class="w3-top">
+<div class="w3-navbar w3-large w3-blue w3-center headm ">
+  <div class="w3-hide-medium w3-hide-large w3-blue w3-opennav w3-left ">
+    <a href="javascript:void(0);" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+</a>
+</div>
+  <a href="#me" class="w3-hide-small">Portfolio</a>
+  <a href="#" class="w3-hide-small">Home</a>
+  <a href="#me" class="w3-hide-small">About</a>
+  <a href="#gallery" class="w3-hide-small">Gallery</a>
+  <a href="#contact" class="w3-hide-small">Contact</a>
+</div>
+
+<div id="demo" class="w3-hide w3-hide-large">
+  <ul class="w3-navbar w3-left-align w3-large w3-blue">
+    <li class="w3-hover-black"><a href="#">Home</a></li>
+    <li><a href="#me">About</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+<script>
+function myFunction() {
+    document.getElementById("demo").classList.toggle("w3-show");
+}
+</script>
+</div>
+</header>
+<!-- Header End -->
+<br>
+<!-- Portfolio start -->
+<div class="w3-light-grey w3-container w3-padding-40 w3-margin-bottom-0 w3-margin-top-0 w3-center">
+  <h1 id="me" class="w3-jumbo">My Portfolio</h1>
+  <img src="255cde3967b1483e6e6bb15da2d11e26.jpg" class="w3-circle" alt="mypicture" style="width:10%"><br>
+  <br>
+  <p >Just me, my self and I, exploring universe of unknownment.I have a heart of love and an interest in coding. I want to share my world with you 
+      <br>
+      I pick the interest in coding after my studying about desktop publishing programs. 
+      <br>
+      I believe with God first am going to go "FAR IN THIS FIELD".
+  </p>
+</div>
+<!-- Portfolio End -->
+
+<!-- my-work start-->
+<div class="w3-container w3-center w3-margin-bottom mywork">
+  <h2>Some of my Works</h2><br>
+  <div class="w3-row-padding">
+    <div class="w3-third">
+        <p class="text">My first project in class,actully it was good <br>The site is all about Dogs</p>
+          <a target="_blank" href="Screenshot (2).png">
+        <img src="Screenshot (2).png" class="w3-image scrn" style="width:100%" alt="Image">
+        </a>
+    </div>
+    
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <p class="text">This is my personal project am working on ,but it is yet unfinish</p>
+        <a target="_blank" href="world.jpg">
+      <img src="world.jpg" class="w3-image" style="width:100%" alt="Image">
+      </a>
+    </div>
+
+    <div class="w3-third">
+        <p class="text">This is a classroom login ,I made out of am assignment </p>
+          <a target="_blank" href="Screenshot (3).png">
+        <img src="Screenshot (3).png" class="w3-image" style="width:100%" alt="Image">
+        </a>
+    </div>
+  </div><br>
+</div>
+</div>
+<!-- my-work end -->
+<br><br>
+
+ <!-- Gallery satrt -->
+<style>
+  .mySlides {display:none;}
+  </style>
+
+  <div id="gallery" class="w3-content w3-section" style="max-width:800px;position:relative">
+    <div class="w3-display-container">
+    <img class="mySlides" src="normal.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-display-container">
+    <img class="mySlides" src="Screenshot (2).png" style="width:100%">
+  </div>
+
+  
+  <div class="w3-display-container">
+    <img class="mySlides" src="world.jpg" style="width:100%">
+  </div>
+
+  
+  <div class="w3-display-container">
+    <img class="mySlides" src="Screenshot (3).png" style="width:100%">
+  </div>
+
+
+    <a class="w3-btn-floating  w3-hover-blue" style="position:absolute;top:52%;left:0" onclick="plusDivs(-1)">❮</a>
+    <a class="w3-btn-floating w3-hover-blue" style="position:absolute;top:52%;right:0" onclick="plusDivs(1)">❯</a>
+
+  </div>
+  
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3555); // Change image every 2 seconds
+  }
+  </script>
+   <!-- Gallery End -->
+
+ <!-- Form start -->
+<br><br>
+<div id="contact" class="w3-container w3-blue">
+  <h2 class="w3-center">CONTACT ME</h2>
+</div>
+
+<form class="w3-container" method="POST" action="http://chideraneboh2019@gmail.com">
+
+<p>
+<label class="w3-label">First Name</label>
+<input class="w3-input w3-animate-input w3-round-large" type="text" required></p>
+
+<p>      
+<label class="w3-label">Last Name</label>
+<input class="w3-input w3-animate-input w3-round-large" type="text" required></p>
+ 
+<p>
+<label class="w3-label w3-validate">Email</label>
+<input class="w3-input w3-animate-input w3-round-large" type="email" required></p>
+
+<p>      
+  <label class="w3-label">Message</label>
+  <input class="w3-input w3-animate-input w3-round-large" type="text"></p>
+
+<a href="http://chideraneboh2019@gmail.com"><button class="w3-btn w3-blue w3-btn-block w3-border w3-round-large">send</button></a>
+</form>
+<br><br>
+ <!-- Form End -->
+
+<!-- Footer start -->
+<footer id="footer" class="w3-container w3-center w3-light-grey">
+    <i class="fab fa-facebook w3-xlarge item1"></i>
+    <i class="fab fa-twitter w3-xlarge item2"></i>
+    <i class="fab fa-whatsapp w3-xlarge item3"></i>
+    <i class="fab fa-instagram w3-xlarge item4"></i>
+    <i class="fas fa-envelope w3-xlarge item5"></i>    
+    <p>Call +2348143120297 <i class="fas fa-phone w3-xlarge item6"></i></p>
+    <p>&copy copyright2020 Chidera</p>
+  </footer>
+  <!-- Footer start --> 
+</body>
+</html> 
